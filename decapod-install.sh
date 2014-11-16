@@ -10,7 +10,7 @@ else
     ! grep "genpdf\.decapod" /etc/mercurial/hgrc >/dev/null 2>&1 &&
     ! grep "server\.decapod" /etc/mercurial/hgrc >/dev/null 2>&1 &&
     ! grep "ui\.decapod" /etc/mercurial/hgrc >/dev/null 2>&1 ); then
-    echo "$keys" | sudo tee -a /etc/mercurial/hgrc >> /dev/null
+    echo -e "$keys" | sudo tee -a /etc/mercurial/hgrc >> /dev/null
   fi
   cd $1
   hg clone https://decapod.googlecode.com/hg/ -r decapod-0.7 decapod-0.7

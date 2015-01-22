@@ -32,7 +32,7 @@ else
   if [ -d $1/decapod-0.7/install-scripts ]; then
     cd $1/decapod-0.7/install-scripts/
 
-    sudo ./decapod-all.sh
+    echo "Y" | sudo ./decapod-all.sh
   else
     echo "Unable to clone decapod"
   fi
